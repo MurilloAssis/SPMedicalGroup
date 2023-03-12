@@ -1,0 +1,72 @@
+CREATE DATABASE SP_MEDICAL_GROUP;
+GO
+
+USE SP_MEDICAL_GROUP;
+GO
+
+CREATE TABLE tipoUsuario (
+	idTipoUsuario TINYINT PRIMARY KEY IDENTITY,
+	tituloTipoUsuario VARCHAR(100) NOT NULL UNIQUE
+);
+GO
+
+
+CREATE TABLE instituicao(
+	idInstituicao SMALLINT PRIMARY KEY IDENTITY,
+	nomeFantasia VARCHAR(50) NOT NULL,
+	endereco VARCHAR(50) NOT NULL,
+	razaoSocial VARCHAR(50) NOT NULL UNIQUE,
+	CNPJ CHAR(18) NOT NULL UNIQUE
+);
+
+
+
+CREATE TABLE especializacao(
+	idEspecializacao SMALLINT PRIMARY KEY IDENTITY,
+	tipoEspecializacao VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE situacao(
+	idSituacao SMALLINT PRIMARY KEY IDENTITY,
+	descricao VARCHAR(25) NOT NULL
+);
+
+CREATE TABLE usuario(
+	idUsuario SMALLINT PRIMARY KEY IDENTITY,
+	idTipoUsuario TINYINT FOREIGN KEY REFERENCES tipoUsuario(idTipoUsuario),
+	nomeUsuario VARCHAR(50) NOT NULL,
+	emailUsuario VARCHAR(256) NOT NULL UNIQUE,
+	senhaUsuario VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE paciente(
+	idPaciente SMALLINT PRIMARY KEY IDENTITY,
+	idUsuario SMALLINT FOREIGN KEY REFERENCES usuario(idUsuario),
+	dataNasc DATETIME NOT NULL,
+	CPF VARCHAR(11) NOT NULL UNIQUE,
+	RG VARCHAR(15) NOT NULL UNIQUE,
+	Telefone VARCHAR(15),
+	enderecoPaciente VARCHAR(150) NOT NULL 
+);
+
+
+CREATE TABLE medico(
+	idMedico SMALLINT PRIMARY KEY IDENTITY,
+	idUsuario SMALLINT FOREIGN KEY REFERENCES usuario(idUsuario),
+	idEspecializacao SMALLINT FOREIGN KEY REFERENCES especializacao(idEspecializacao),
+	idInstituicao SMALLINT FOREIGN KEY REFERENCES instituicao(idInstituicao),
+	CRM VARCHAR(8) NOT NULL UNIQUE
+);
+
+CREATE TABLE consulta(
+	idConsulta SMALLINT PRIMARY KEY IDENTITY,
+	idMedico SMALLINT FOREIGN KEY REFERENCES medico(idMedico), 
+	idSituacao SMALLINT FOREIGN KEY REFERENCES situacao(idSituacao),
+	idPaciente SMALLINT FOREIGN KEY REFERENCES paciente(idPaciente),
+	dataConsulta DATE NOT NULL,
+	descricaoConsulta VARCHAR(100) NOT NULL
+);
+GO
+
+ALTER TABLE consulta 
+ADD descricaoConsulta VARCHAR(100)

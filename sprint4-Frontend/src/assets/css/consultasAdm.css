@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 1% 0 1% 7%;
+}
+
+.links_uteis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+}
+
+.links_uteis a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.links_uteis a:hover{
+    scale: 1.1;
+    color: grey;
+}
+
+.space_left{
+    display: flex;
+}
+
+.img_config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_config img{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-right: 5px;
+}
+
+
+.div_titulo{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_cadastrar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+justify-content: space-between;
+height: 30vh;
+align-items: center;
+}
+
+.input_form{
+    width: 20vw;
+}
+
+@media(max-width: 600px){
+    .links_uteis{
+      width: 270px;
+    }
+    .links_uteis a{
+        font-size: 14px;
+    }
+
+    .img_config img{
+        
+        width: 60px;
+        height: 60px;
+    }
+    .logo{
+        width: 75px;
+        height: 75px;
+    }
+  }
+

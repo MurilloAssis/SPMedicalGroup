@@ -1,0 +1,1524 @@
+{
+	"info": {
+		"_postman_id": "4baa8a3c-1bcc-4075-a396-718a8c1b7bb7",
+		"name": "senai_SpMedicalGroup_webapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LocalHost",
+			"item": [
+				{
+					"name": "Clinica",
+					"item": [
+						{
+							"name": "Clinica.Cadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"NomeFantasia\": \"Teste\",\r\n    \"Endereco\": \"Teste\",\r\n    \"RazaoSocial\": \"Teste\",\r\n    \"Cnpj\": 234564324558086531\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Instituicoes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Instituicoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clinica.ListarTodas",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Instituicoes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Instituicoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clinica.Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cnpj\": \"99999999999999\",\r\n    \"Endereco\": \"teste\",\r\n    \"NomeFantasia\": \"teste\",\r\n    \"RazaoSocial\": \"teste\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Instituicoes/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Instituicoes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clinica.Deletar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Instituicoes/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Instituicoes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Consulta",
+					"item": [
+						{
+							"name": "Consultas.Cadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEzNzMzLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.yI5l12MUPelUAEh8JmPCJ-IQs2CFxH4JfLj0x3ms-Xg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IdMedico\": 2,\r\n    \"IdPaciente\": 3,\r\n    \"DataConsulta\": \"2021-09-27T10:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.ListarTodas",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEyMjE1LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.OON7B_u7NRWsR-BSW18Q-5pzqf0eMwpEloArNwAFkgc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.CancelarConsulta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNTEzNjMwLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.DvRCVCRWl9iJZJoBO5LAWK7WhuKHKuRhZx-P3QBTL04",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas/Cancelar/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas",
+										"Cancelar",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.AlterarDescricao",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvYmVydG8ucG9zc2FybGVAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MzI2MTIzMTAsImlzcyI6IlNQTUVESUNBTEdST1VQLndlYkFwaSIsImF1ZCI6IlNQTUVESUNBTEdST1VQLndlYkFwaSJ9.sn_Ni7U3hfJJWHW1u66NAybHXkiESpPlig2kDjnRlx0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DescricaoConsulta\": \"O paciente está saudável\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas/AlterarDescricao/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas",
+										"AlterarDescricao",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.ListarConsultasMedico",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvYmVydG8ucG9zc2FybGVAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MzI2MTIzMTAsImlzcyI6IlNQTUVESUNBTEdST1VQLndlYkFwaSIsImF1ZCI6IlNQTUVESUNBTEdST1VQLndlYkFwaSJ9.sn_Ni7U3hfJJWHW1u66NAybHXkiESpPlig2kDjnRlx0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas/Lista/Medico",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas",
+										"Lista",
+										"Medico"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.ListarConsultasPaciente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkxpZ2lhQGVtYWlsLmNvbSIsImp0aSI6IjQiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIyIiwiZXhwIjoxNjMyNjEyNTA3LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.tvFmb7JvmuxtvSZFLjapViW0v6N_3Xse-v3wyd_iMzA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas/Lista/Paciente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas",
+										"Lista",
+										"Paciente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.RemoverSistema",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEzNzMzLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.yI5l12MUPelUAEh8JmPCJ-IQs2CFxH4JfLj0x3ms-Xg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultas/Remover/9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultas",
+										"Remover",
+										"9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "Login.Medico",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"EmailUsuario\": \"roberto.possarle@spmedicalgroup.com.br\",\r\n    \"SenhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login.Adm",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"emailUsuario\": \"Rafaela@email.com\",\r\n    \"senhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login.Paciente",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"emailUsuario\": \"Ligia@email.com\",\r\n    \"senhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "Usuarios.ListarTodos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjE3MDk4LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.W8ie06TvEE9IhUs3IJjCrALenb9-Z9-CEvdwLBiHqDI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.Cadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEyMjE1LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.OON7B_u7NRWsR-BSW18Q-5pzqf0eMwpEloArNwAFkgc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IdTipoUsuario\": 1,\r\n    \"NomeUsuario\": \"teste\",\r\n    \"EmailUsuario\": \"teste@email.com\",\r\n    \"SenhaUsuario\": \"123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.SalvarFotoBd",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjA2ODkxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.-nFXdk988Ozl_L4FKJMmd5K0rlcs2gTApSa_qKNF5dg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "arquivo",
+											"type": "file",
+											"src": "/C:/Users/Murillo/Desktop/índice.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios/imagem/bd/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios",
+										"imagem",
+										"bd",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.ConsultarFotoBD",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjA2ODkxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.-nFXdk988Ozl_L4FKJMmd5K0rlcs2gTApSa_qKNF5dg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios/imagem/bd/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios",
+										"imagem",
+										"bd",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.BuscarPorId",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEwMzIxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.Uhw0jFieG22hUha59DZWwOPc8aeNBiNU7NqQ0O5Dlnk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEwMzIxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.Uhw0jFieG22hUha59DZWwOPc8aeNBiNU7NqQ0O5Dlnk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"NomeUsuario\": \"TesteAtt\",\r\n    \"EmailUsuario\": \"TestAtt@email.com\",\r\n    \"SenhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios/att/14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios",
+										"att",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.Deletar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEwMzIxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.Uhw0jFieG22hUha59DZWwOPc8aeNBiNU7NqQ0O5Dlnk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios/delete/14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios",
+										"delete",
+										"14"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Azure WebSite",
+			"item": [
+				{
+					"name": "Clinica",
+					"item": [
+						{
+							"name": "Clinica.Cadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"NomeFantasia\": \"Teste\",\r\n    \"Endereco\": \"Teste\",\r\n    \"RazaoSocial\": \"Teste\",\r\n    \"Cnpj\": 234564324558086531\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Instituicoes",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Instituicoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clinica.ListarTodas",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Instituicoes",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Instituicoes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clinica.Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cnpj\": \"99999999999999\",\r\n    \"Endereco\": \"teste\",\r\n    \"NomeFantasia\": \"teste\",\r\n    \"RazaoSocial\": \"teste\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Instituicoes/2",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Instituicoes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clinica.Deletar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjY3NTkyLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.9pxtxQUg-09ozpbIndPo383nq2avYN8SsSIOGyj1ZYA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Instituicoes/2",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Instituicoes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Consulta",
+					"item": [
+						{
+							"name": "Consultas.Cadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEzNzMzLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.yI5l12MUPelUAEh8JmPCJ-IQs2CFxH4JfLj0x3ms-Xg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IdMedico\": 2,\r\n    \"IdPaciente\": 3,\r\n    \"DataConsulta\": \"2021-09-27T10:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.ListarTodas",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEyMjE1LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.OON7B_u7NRWsR-BSW18Q-5pzqf0eMwpEloArNwAFkgc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas/",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.CancelarConsulta",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNTEzNjMwLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.DvRCVCRWl9iJZJoBO5LAWK7WhuKHKuRhZx-P3QBTL04",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas/Cancelar/6",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas",
+										"Cancelar",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.AlterarDescricao",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvYmVydG8ucG9zc2FybGVAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MzI2MTIzMTAsImlzcyI6IlNQTUVESUNBTEdST1VQLndlYkFwaSIsImF1ZCI6IlNQTUVESUNBTEdST1VQLndlYkFwaSJ9.sn_Ni7U3hfJJWHW1u66NAybHXkiESpPlig2kDjnRlx0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DescricaoConsulta\": \"O paciente está saudável\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas/AlterarDescricao/4",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas",
+										"AlterarDescricao",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.ListarConsultasMedico",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvYmVydG8ucG9zc2FybGVAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MzI2MTIzMTAsImlzcyI6IlNQTUVESUNBTEdST1VQLndlYkFwaSIsImF1ZCI6IlNQTUVESUNBTEdST1VQLndlYkFwaSJ9.sn_Ni7U3hfJJWHW1u66NAybHXkiESpPlig2kDjnRlx0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas/Lista/Medico",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas",
+										"Lista",
+										"Medico"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.ListarConsultasPaciente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkxpZ2lhQGVtYWlsLmNvbSIsImp0aSI6IjQiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIyIiwiZXhwIjoxNjMyNjEyNTA3LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.tvFmb7JvmuxtvSZFLjapViW0v6N_3Xse-v3wyd_iMzA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas/Lista/Paciente",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas",
+										"Lista",
+										"Paciente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultas.RemoverSistema",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEzNzMzLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.yI5l12MUPelUAEh8JmPCJ-IQs2CFxH4JfLj0x3ms-Xg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Consultas/Remover/9",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Consultas",
+										"Remover",
+										"9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "Login.Medico",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"EmailUsuario\": \"roberto.possarle@spmedicalgroup.com.br\",\r\n    \"SenhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Login",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login.Adm",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"emailUsuario\": \"Rafaela@email.com\",\r\n    \"senhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Login",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login.Paciente",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"emailUsuario\": \"Ligia@email.com\",\r\n    \"senhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Login",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "Usuarios.ListarTodos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbGFAZW1haWwuY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjE3MDk4LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.W8ie06TvEE9IhUs3IJjCrALenb9-Z9-CEvdwLBiHqDI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.Cadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEyMjE1LCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.OON7B_u7NRWsR-BSW18Q-5pzqf0eMwpEloArNwAFkgc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IdTipoUsuario\": 1,\r\n    \"NomeUsuario\": \"teste\",\r\n    \"EmailUsuario\": \"teste@email.com\",\r\n    \"SenhaUsuario\": \"123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.SalvarFotoBd",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjA2ODkxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.-nFXdk988Ozl_L4FKJMmd5K0rlcs2gTApSa_qKNF5dg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "arquivo",
+											"type": "file",
+											"src": "/C:/Users/Murillo/Desktop/índice.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios/imagem/bd/1",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"imagem",
+										"bd",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.ConsultarFotoBD",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjA2ODkxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.-nFXdk988Ozl_L4FKJMmd5K0rlcs2gTApSa_qKNF5dg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios/imagem/bd/1",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"imagem",
+										"bd",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.BuscarPorId",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEwMzIxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.Uhw0jFieG22hUha59DZWwOPc8aeNBiNU7NqQ0O5Dlnk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios/13",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.Atualizar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEwMzIxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.Uhw0jFieG22hUha59DZWwOPc8aeNBiNU7NqQ0O5Dlnk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"NomeUsuario\": \"TesteAtt\",\r\n    \"EmailUsuario\": \"TestAtt@email.com\",\r\n    \"SenhaUsuario\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios/att/14",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"att",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Usuarios.Deletar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11cmlsbG9AZW1haWwuY29tIiwianRpIjoiMTIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMyNjEwMzIxLCJpc3MiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkiLCJhdWQiOiJTUE1FRElDQUxHUk9VUC53ZWJBcGkifQ.Uhw0jFieG22hUha59DZWwOPc8aeNBiNU7NqQ0O5Dlnk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://senai-spmedicalgroup-webapi-murillo.azurewebsites.net/api/Usuarios/delete/14",
+									"protocol": "http",
+									"host": [
+										"senai-spmedicalgroup-webapi-murillo",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"Usuarios",
+										"delete",
+										"14"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
